@@ -17,6 +17,13 @@ document.getElementById('no').addEventListener('dblclick',function(e){
             count=0
         }   
 })
-document.getElementById('ok').addEventListener('click',function(e){
-    document.getElementById('cancel')
+var margin=20;
+ 
+document.getElementById('ok').addEventListener('click',function(){
+    margin=margin+10
+    document.getElementById('cancel').style.marginLeft=`${margin}px`;
+    document.getElementById('cancel').style.marginRight=`${margin}px`;
+    document.getElementById('no').style.marginLeft=`${margin}px`;
+    document.getElementById('no').style.marginRight=`${margin}px`;
+    
 })
